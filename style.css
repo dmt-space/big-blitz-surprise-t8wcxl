@@ -1,0 +1,190 @@
+body {
+  background: radial-gradient(#37505d, #0c1014);
+  color: #fff;
+  padding: 15px 15px 30px 20px;
+  /* perspective: 200px; */
+  perspective-origin: left 4rem;
+}
+
+* {
+  font-family: Gilroy, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: normal;
+}
+
+.scrollhide {
+  opacity: 0.3;
+  transition: all 1s;
+}
+
+.boot.scrollhide {
+  opacity: 0;
+}
+
+.bootable {
+  text-align: center;
+}
+
+.bootable h2,
+.bootable p {
+  opacity: 0.7;
+}
+
+.start {
+  margin-top: 10vh;
+  margin-bottom: 100px;
+}
+
+.boot .counterwrap {
+  opacity: 1;
+}
+.counterwrap {
+  font-weight: 800;
+  font-size: 48px;
+  opacity: 0;
+}
+
+.counter {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+h1 a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  min-height: 400px;
+  margin-bottom: 3rem;
+  opacity: 0.4;
+  transition: all 0.5s;
+  transform: rotateY(-2deg);
+  filter: blur(5px);
+}
+
+/* section.activated {
+  opacity: 0.8;
+} */
+
+meter {
+  opacity: 0;
+}
+
+.boot meter {
+  opacity: 1;
+}
+
+section.boot {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* 
+section:hover {
+  opacity: 1;
+} */
+
+/* section .buttons,
+section meter {
+  opacity: 0.1;
+  transition: opacity 0.5s 0.5s;
+}
+
+section.activated .buttons,
+section.activated meter,
+section:hover .buttons,
+section:hover meter {
+  opacity: 1;
+} */
+
+.buttons {
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+meter {
+  height: 30px;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+}
+
+meter::after {
+  content: attr(data-prefix) attr(value) attr(data-suffix);
+  position: absolute;
+  top: -100%;
+  right: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+meter::-webkit-meter-bar {
+  background: #eee;
+  height: 30px;
+  border: none;
+}
+
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value {
+  transition: width 0.5s;
+  background: #1389fd;
+}
+
+.box {
+  background: none;
+  border: none;
+}
+
+.invert {
+  text-align: left;
+  background: #fff;
+  color: #333;
+  padding: 15px 15px 30px 20px;
+  margin: -15px -20px -35px -25px;
+  position: relative;
+}
+
+.invert h1 {
+  font-weight: 800;
+}
+
+.invert h2 {
+  line-height: 1.5;
+}
+
+.invert h2 strong {
+  font-weight: 700;
+}
+
+footer {
+  position: absolute;
+  right: 2rem;
+  font-size: 2.5rem;
+  bottom: 2rem;
+  width: 100%;
+  text-align: right;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer .c1 {
+  color: #37505d66;
+}
+
+footer .c2 {
+  color: #37505d99;
+}
+
+footer .c3 {
+  color: #37505dcc;
+}
